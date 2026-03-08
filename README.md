@@ -34,7 +34,7 @@ Each folder contains:
 ## 🎥 YouTube Series
 
 You can watch the full video explanations here:
-(Your YouTube Playlist Link)
+(https://www.youtube.com/watch?v=UStuUoop4WY&list=PLAdSxQAWkF-kDCfisdWgbGyX1l3HcTjBw&pp=sAgC)
 
 ## 🛠 Technologies
 
@@ -47,3 +47,4 @@ You can watch the full video explanations here:
 ---
 
 ⭐ If you find this helpful, feel free to **star the repository** and subscribe and like my youtube channel
+
