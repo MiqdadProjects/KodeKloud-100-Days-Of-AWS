@@ -1,17 +1,45 @@
-# Day 21 - Setting Up an EC2 Instance with an Elastic IP for Application Hosting
+<div align="center">
+  <img src="https://img.shields.io/badge/AWS-100%20Days%20Challenge-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="100 Days of AWS Challenge"/>
+  <h1>☁️ Day 21: Setting Up an EC2 Instance with an Elastic IP</h1>
+</div>
 
-**YouTube Video Link:**  
-[Watch the solution here](https://www.youtube.com/watch?v=ULkoZZEnBB8)
+---
 
-**Task Summary:**  
-In this task, you learn how to set up a complete EC2 instance configured with an Elastic IP address for hosting a web application. The video covers the end-to-end flow: launching an EC2 instance, allocating an Elastic IP, associating it with the instance, and verifying the setup for stable public access. This is a practical real-world scenario combining multiple AWS concepts from previous days.
+## 🎥 Video Tutorial
 
-**What you will learn:**  
-- How to combine EC2 instance launch, Key Pair, Security Group, and Elastic IP into a complete application hosting setup.  
-- How Elastic IPs provide a stable public endpoint that persists across instance stop/start cycles.  
-- How to verify connectivity to a hosted application via the public Elastic IP address.  
-- Best practice: Use Elastic IPs for stable DNS mapping; pair with a domain name in **Route 53** for a production-grade setup instead of using raw IP addresses.
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ULkoZZEnBB8">
+    <img src="https://img.shields.io/badge/YouTube-Watch%20Solution-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube"/>
+  </a>
+</p>
 
-**Support the content:**  
-If you found this video helpful, please **like**, **subscribe**, and **star** this repository:  
-[GitHub Repo Link](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+---
+
+## 🧠 Task Overview
+
+Hosting a web application requires absolute network stability. If a customer bookmarks your site or your DNS provider points `www.yourcompany.com` to a specific IP address, that address cannot change randomly in the middle of the night.
+
+In this practical, capstone-style task, we synthesize several AWS concepts. You will launch a fresh EC2 instance, deploy a web server, allocate a static **Elastic IP (EIP)**, and bind that permanent public IP address to your server to establish a reliable, unmoving internet endpoint for application hosting.
+
+---
+
+## 🎯 Key Takeaways & Best Practices
+
+- 🏗️ **Architectural Assembly:** Building a public host requires the harmony of 4 core services: EC2 (compute), Security Groups (firewall allowing HTTP 80), IGW (internet gateway routing), and the Elastic IP (static identity).
+- 📌 **The Reassignment Trick:** If your specific EC2 instance requires a reboot or replacement due to underlying hardware degradation, you simply spin up a new EC2 instance and reassign the EIP to the new box. The internet remains entirely unaware of the downtime.
+- 🪟 **Public DNS Names:** When you assign an EIP to an instance, AWS automatically updates the instance’s Public DNS hostname (e.g., `ec2-54-20-10-5.compute-1.amazonaws.com`) to match the new Elastic address.
+- 🌐 **Modern Evolution:** While hosting a single site on an EC2 with an EIP is great for learning and small projects, modern enterprise architectures rarely use raw Elastic IPs for web hosting. Instead, they point their DNS to highly available **Application Load Balancers (ALBs)**.
+
+---
+
+## 💡 Real-World Scenario
+
+> **The Legacy App Migration:** A local government agency needed to migrate a 15-year-old monolithic application into the cloud. The application was notoriously fragile, and hundreds of remote state systems had the application's IPv4 address hardcoded deeply into their codebases instead of using a domain name. By utilizing AWS **Elastic IPs**, the cloud architects could perform a "Lift and Shift" migration to an EC2 instance, map the EIP to mimic the old system, and allow the hardcoded remote systems to connect to the AWS cloud immediately without rewriting any legacy code.
+
+---
+
+## 🤝 Support the Content
+
+If this breakdown helped you simplify AWS, please support the journey!
+- ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+- 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!

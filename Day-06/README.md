@@ -1,17 +1,45 @@
-# Day 06 - Launch EC2 Instance
+<div align="center">
+  <img src="https://img.shields.io/badge/AWS-100%20Days%20Challenge-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="100 Days of AWS Challenge"/>
+  <h1>☁️ Day 06: Launch EC2 Instance</h1>
+</div>
 
-**YouTube Video Link:**  
-[Watch the solution here](https://www.youtube.com/watch?v=RX1CnLWS6nc)
+---
 
-**Task Summary:**  
-In this task, you learn how to launch an EC2 (Elastic Compute Cloud) instance on AWS, which is a virtual server in the cloud. The video walks through the full process of selecting an AMI (Amazon Machine Image), choosing an instance type, configuring a key pair and security group, and launching the instance. Launching an EC2 instance is one of the most fundamental skills for any AWS practitioner.
+## 🎥 Video Tutorial
 
-**What you will learn:**  
-- What an AWS EC2 instance is and its role as a virtual server in the cloud.  
-- How to launch an EC2 instance using the AWS Management Console step-by-step.  
-- Key concepts: AMI selection, instance types (e.g., `t2.micro`), key pair attachment, and security group assignment.  
-- Best practice: Use the Free Tier eligible `t2.micro` or `t3.micro` instance types for learning to avoid unexpected charges.
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=RX1CnLWS6nc">
+    <img src="https://img.shields.io/badge/YouTube-Watch%20Solution-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube"/>
+  </a>
+</p>
 
-**Support the content:**  
-If you found this video helpful, please **like**, **subscribe**, and **star** this repository:  
-[GitHub Repo Link](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+---
+
+## 🧠 Task Overview
+
+Amazon Elastic Compute Cloud (EC2) is the heart of AWS compute. Mastering how to deploy an EC2 instance efficiently is the defining skill of a cloud engineer. 
+
+In this task, we bring all previous foundational components together—mixing AMIs (Operating Systems), Instance Types (CPU/RAM sizing), Key Pairs (Security), Security Groups (Firewalls), and VPC Subnets (Networking) to launch a fully functioning virtual server in the cloud.
+
+---
+
+## 🎯 Key Takeaways & Best Practices
+
+- 🖥️ **AMI Selection:** The Amazon Machine Image decides the operating system. **Amazon Linux 2023** is heavily optimized for AWS environments and includes the AWS CLI pre-installed.
+- ⚖️ **Instance Sizing:** Sizes like `t2.micro` or `t3.micro` dictate compute power. The letters indicate the instance *family* (`t` for general burstable, `c` for compute-heavy, `m` for memory) and the word dictates the size `micro, small, large`.
+- 💵 **Free Tier Awareness:** To avoid unexpected bills while learning, strictly stick to instances labeled **Free Tier Eligible** (typically `t2.micro` or `t3.micro` depending on region).
+- 🔄 **Ephemeral Nature:** By default, EC2 public IPv4 addresses change if you stop and start the server. Never rely on the default public IP for permanent DNS mapping. 
+
+---
+
+## 💡 Real-World Scenario
+
+> **Compute Sizing Mistakes:** Junior engineers often launch overly large instances (like `m5.2xlarge`) just "to be safe," burning through budget rapidly when the CPU sits at 2% utilization. Cloud-native architecture embraces the concept of **horizontal scaling**: launching many tiny, cheap instances (like `t3.small`) handled by an Auto Scaling Group, rather than one giant, expensive instance. Always design around small, predictable compute blocks.
+
+---
+
+## 🤝 Support the Content
+
+If this breakdown helped you simplify AWS, please support the journey!
+- ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+- 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!

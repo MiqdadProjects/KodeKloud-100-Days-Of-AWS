@@ -1,17 +1,45 @@
-# Day 02 - Create Security Group
+<div align="center">
+  <img src="https://img.shields.io/badge/AWS-100%20Days%20Challenge-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="100 Days of AWS Challenge"/>
+  <h1>☁️ Day 02: Create Security Group</h1>
+</div>
 
-**YouTube Video Link:**  
-[Watch the solution here](https://www.youtube.com/watch?v=oKdO60QNFlQ&t)
+---
 
-**Task Summary:**  
-In this task, you learn how to create a Security Group in AWS, which acts as a virtual firewall to control inbound and outbound traffic for your AWS resources. The video demonstrates how to define rules to allow or deny specific types of traffic such as SSH, HTTP, and HTTPS. Security Groups are a critical component of securing your cloud infrastructure on AWS.
+## 🎥 Video Tutorial
 
-**What you will learn:**  
-- What an AWS Security Group is and how it controls network traffic.  
-- How to create a Security Group and add inbound/outbound rules via the AWS Console.  
-- Common port configurations: port 22 (SSH), port 80 (HTTP), port 443 (HTTPS).  
-- Best practice: Follow the principle of least privilege — only open ports that are absolutely necessary.
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=oKdO60QNFlQ&t">
+    <img src="https://img.shields.io/badge/YouTube-Watch%20Solution-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube"/>
+  </a>
+</p>
 
-**Support the content:**  
-If you found this video helpful, please **like**, **subscribe**, and **star** this repository:  
-[GitHub Repo Link](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+---
+
+## 🧠 Task Overview
+
+A **Security Group** acts as a virtual, stateful firewall for your AWS EC2 instances, controlling both incoming (inbound) and outgoing (outbound) traffic on a port-by-port, IP-by-IP basis. 
+
+If Key Pairs are the lock on the door, Security Groups are the high concrete wall surrounding the entire perimeter. Misconfiguring them is one of the leading causes of cloud data breaches. In this task, you learn how to secure an instance by allowing only the exact traffic needed to function.
+
+---
+
+## 🎯 Key Takeaways & Best Practices
+
+- 🛡️ **Stateful by Design:** If you allow an incoming request (like SSH on Port 22), the response traffic is automatically allowed out, regardless of outbound rules.
+- 🚷 **Default Deny:** By default, a new Security Group denies *all* inbound traffic, but allows *all* outbound traffic. You must explicitly add inbound rules.
+- 🎯 **Principle of Least Privilege:** Never use `0.0.0.0/0` (everyone) for SSH (Port 22). Always restrict administrative ports to your specific static IP address or an internal corporate VPN IP block.
+- 🌐 **Common Web Ports:** To host a public website, you will need to open Port 80 for `HTTP` and Port 443 for `HTTPS` to the world (`0.0.0.0/0` for IPv4 and `::/0` for IPv6).
+
+---
+
+## 💡 Real-World Scenario
+
+> **The Ransomware Reality:** A widespread mistake in cloud deployments is leaving databases (like MySQL on Port 3306 or Redis on 6379) open to `0.0.0.0/0`. Attackers run automated internet-wide scanners specifically looking for exposed databases. Within hours of misconfiguring this rule, bots will attempt to brute-force the password or drop ransomware. **Never expose databases to the public web** — restrict their Security Group inbound rules to only accept traffic from the Web Server's Security Group ID.
+
+---
+
+## 🤝 Support the Content
+
+If this breakdown helped you simplify AWS, please support the journey!
+- ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
+- 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
