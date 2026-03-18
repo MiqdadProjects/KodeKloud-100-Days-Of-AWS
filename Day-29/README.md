@@ -43,3 +43,12 @@ By design, Virtual Private Clouds (VPCs) are fiercely isolated. Even if you own 
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon EC2 (Elastic Compute Cloud):** Provides resizable compute capacity in the cloud. Instead of buying physical hardware, you rent virtual servers (Instances), on which you can run Linux or Windows. It is the backbone of compute on AWS.
+- **Amazon VPC (Virtual Private Cloud):** A logically isolated virtual network defined by you. It is the foundational networking layer where you launch AWS resources safely.
+- **VPC Peering:** A point-to-point networking connection between two distinct VPCs that enables routing traffic between them using private IPv4 addresses, as if they were intimately in the same network structure.
+- **Amazon RDS (Relational Database Service):** A robust managed service that makes it remarkably easy to set up, operate, and effortlessly scale a relational database (like MySQL, PostgreSQL) in the cloud.

@@ -43,3 +43,13 @@ However, you can create and attach *secondary* ENIs (`eth1`, `eth2`, etc.) to EC
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon EC2 (Elastic Compute Cloud):** Provides resizable compute capacity in the cloud. Instead of buying physical hardware, you rent virtual servers (Instances), on which you can run Linux or Windows. It is the backbone of compute on AWS.
+- **Subnets:** A logically isolated sub-section of a VPC. A **Public Subnet** has a direct route to the Internet via an Internet Gateway, while a **Private Subnet** has no direct Internet access, keeping resources highly secure.
+- **Amazon VPC (Virtual Private Cloud):** A logically isolated virtual network defined by you. It is the foundational networking layer where you launch AWS resources safely.
+- **Elastic IPs (EIP):** A static, public IPv4 address designed for dynamic cloud computing. Unlike dynamic IPs that change upon restarts, an EIP remains fixed. If an instance fails, you can rapidly remap the EIP to another healthy instance.
+- **ENI (Elastic Network Interface):** A logical networking component in a VPC that represents a virtual network card, allowing an EC2 instance to communicate with the network.

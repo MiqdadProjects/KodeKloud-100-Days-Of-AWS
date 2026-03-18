@@ -43,3 +43,10 @@ By enabling **S3 Versioning**, AWS automatically retains multiple variants of an
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon S3 (Simple Storage Service):** An object storage service offering scalable data availability and security. You can use S3 to store back-ups, hold application assets, or directly host static HTML websites.
+- **S3 Versioning:** The act of keeping multiple variants of an object in the same S3 bucket to protect against accidental overwrites or unauthorized deletions.

@@ -39,3 +39,11 @@ Allow outbound internet access for essential resources in a private subnet (for 
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Subnets:** A logically isolated sub-section of a VPC. A **Public Subnet** has a direct route to the Internet via an Internet Gateway, while a **Private Subnet** has no direct Internet access, keeping resources highly secure.
+- **Amazon VPC (Virtual Private Cloud):** A logically isolated virtual network defined by you. It is the foundational networking layer where you launch AWS resources safely.
+- **NAT Gateway / NAT Instance:** Network Address Translation mechanism that allows resources in a private subnet to securely access the open internet (e.g., to routinely download OS updates) while strictly preventing the internet from initiating a connection back inwards with those resources.

@@ -43,3 +43,12 @@ In this task, you learn how to carve out an IP address space using CIDR blocks a
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Subnets:** A logically isolated sub-section of a VPC. A **Public Subnet** has a direct route to the Internet via an Internet Gateway, while a **Private Subnet** has no direct Internet access, keeping resources highly secure.
+- **Amazon VPC (Virtual Private Cloud):** A logically isolated virtual network defined by you. It is the foundational networking layer where you launch AWS resources safely.
+- **Internet Gateway (IGW):** A highly available, horizontally scaled VPC component that allows communication between instances in your VPC and the open internet.
+- **Application Load Balancer (ALB):** Automatically distributes incoming layer-7 application traffic (HTTP/HTTPS) intelligently across multiple target resources, such as EC2 instances, ensuring no single server gets overloaded.

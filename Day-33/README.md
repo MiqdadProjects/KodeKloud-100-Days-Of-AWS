@@ -39,3 +39,9 @@ Learn the basics of serverless computing by creating a simple AWS Lambda functio
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **AWS Lambda:** The pioneer of serverless compute services. It runs your strict code logic synchronously in response to triggers (events) and automatically provisions/manages the underlying servers. You simply pay precisely for the milliseconds your code executes.

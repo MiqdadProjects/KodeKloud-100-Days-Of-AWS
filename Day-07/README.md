@@ -43,3 +43,12 @@ In this task, you learn how to identify when an instance is struggling or over-p
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon EC2 (Elastic Compute Cloud):** Provides resizable compute capacity in the cloud. Instead of buying physical hardware, you rent virtual servers (Instances), on which you can run Linux or Windows. It is the backbone of compute on AWS.
+- **Elastic IPs (EIP):** A static, public IPv4 address designed for dynamic cloud computing. Unlike dynamic IPs that change upon restarts, an EIP remains fixed. If an instance fails, you can rapidly remap the EIP to another healthy instance.
+- **Amazon CloudWatch:** A monitoring and observability service. It collects operational data in the form of logs, metrics, and events. We use **CloudWatch Alarms** to continually monitor resources and automatically trigger actions when thresholds are breached.
+- **Auto Scaling Groups (ASG):** Intelligently and automatically dynamically adjusts the number of EC2 instances serving your application based on actual demand rules and health checks, guaranteeing continuous high availability and dramatically optimized costs.

@@ -39,3 +39,9 @@ Create highly scalable, schema-less NoSQL database tables and manage structural 
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon DynamoDB:** A hyper-fast, fully managed, truly serverless NoSQL database service capable of immense multi-region availability and consistent, single-digit millisecond latency at any theoretical scale.

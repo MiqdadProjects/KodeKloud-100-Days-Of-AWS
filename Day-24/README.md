@@ -43,3 +43,11 @@ The ALB is a Layer 7 (HTTP/HTTPS) traffic router. It sits between the user and y
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon EC2 (Elastic Compute Cloud):** Provides resizable compute capacity in the cloud. Instead of buying physical hardware, you rent virtual servers (Instances), on which you can run Linux or Windows. It is the backbone of compute on AWS.
+- **Security Groups:** Act as a stateful, instance-level functional firewall. They evaluate incoming and outgoing traffic at the resource layer, allowing you to selectively open ports like 22 (SSH) or 80 (HTTP).
+- **Application Load Balancer (ALB):** Automatically distributes incoming layer-7 application traffic (HTTP/HTTPS) intelligently across multiple target resources, such as EC2 instances, ensuring no single server gets overloaded.

@@ -43,3 +43,14 @@ A **Virtual Private Cloud (VPC)** is a logically isolated slice of the AWS cloud
 If this breakdown helped you simplify AWS, please support the journey!
 - ⭐ **Star this Repository:** [KodeKloud-100-Days-Of-AWS](https://github.com/MiqdadProjects/KodeKloud-100-Days-Of-AWS.git)
 - 🔔 **Subscribe on YouTube:** Enable notifications so you never miss a day of the challenge!
+
+## 📚 AWS Concepts & Services Covered
+
+Here is a crystal-clear explanation of the AWS concepts and services actively used in this day's task:
+
+- **Amazon EC2 (Elastic Compute Cloud):** Provides resizable compute capacity in the cloud. Instead of buying physical hardware, you rent virtual servers (Instances), on which you can run Linux or Windows. It is the backbone of compute on AWS.
+- **Subnets:** A logically isolated sub-section of a VPC. A **Public Subnet** has a direct route to the Internet via an Internet Gateway, while a **Private Subnet** has no direct Internet access, keeping resources highly secure.
+- **Amazon VPC (Virtual Private Cloud):** A logically isolated virtual network defined by you. It is the foundational networking layer where you launch AWS resources safely.
+- **Internet Gateway (IGW):** A highly available, horizontally scaled VPC component that allows communication between instances in your VPC and the open internet.
+- **Elastic IPs (EIP):** A static, public IPv4 address designed for dynamic cloud computing. Unlike dynamic IPs that change upon restarts, an EIP remains fixed. If an instance fails, you can rapidly remap the EIP to another healthy instance.
+- **NAT Gateway / NAT Instance:** Network Address Translation mechanism that allows resources in a private subnet to securely access the open internet (e.g., to routinely download OS updates) while strictly preventing the internet from initiating a connection back inwards with those resources.
