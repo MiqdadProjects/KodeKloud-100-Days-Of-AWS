@@ -112,6 +112,9 @@ Reading documentation is great, but watching the architecture come to life is ev
 
 ---
 
+<img width="708" height="506" alt="image" src="https://github.com/user-attachments/assets/125f10aa-70f2-4943-9cc7-e1f5aff64822" />
+
+
 <div align="center">
   <h3>🤝 Show Your Support</h3>
   <p>If you find these solutions helpful, consider dropping a ⭐ on the repo or subscribing to the channel. It goes a long way in supporting the journey!</p>
