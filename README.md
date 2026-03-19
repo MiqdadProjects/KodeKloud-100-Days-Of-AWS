@@ -80,6 +80,10 @@ Each day features a detailed **README** breaking down the "Why" and "How" of the
 | **44** | Implementing Auto Scaling for High Availability in AWS | [➡️ View](Day-44/) |
 | **45** | Configure NAT Gateway for Internet Access in a Private VPC | [➡️ View](Day-45/) |
 | **46** | Event-Driven Processing with Amazon S3 and Lambda | [➡️ View](Day-46/) |
+| **47** | Priority Queuing System using Amazon SQS, SNS, and Lambda | [➡️ View](Day-47/) |
+| **48** | Deploy AWS Lambda App via CloudFormation | [➡️ View](Day-48/) |
+| **49** | Secure SCP Log Transfer and Cron Jobs via Jump Server | [➡️ View](Day-49/) |
+| **50** | Resize EC2 EBS Volume on the Fly (Growpart) | [➡️ View](Day-50/) |
 
 
 ---
