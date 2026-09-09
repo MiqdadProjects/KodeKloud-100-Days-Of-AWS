@@ -27,22 +27,37 @@ How does a server without a Public IP reach the internet? It uses **Network Addr
 
 To turn a standard Amazon Linux 2 EC2 instance into a functional NAT router, you must execute the following commands to manipulate the Linux kernel and `iptables` firewall:
 
-```bash
-# 1. Enable IP forwarding in the Linux kernel
-sudo sysctl net.ipv4.ip_forward=1
+```#!/bin/bash
+set -x
 
-# 2. Configure IP masquerading to hide the private IPs
-sudo /sbin/iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+# 1. Install iptables FIRST — AL2023 ships without it
+dnf install -y iptables-services
 
-# 3. Install the iptables service to persist rules across reboots
-sudo yum install -y iptables-services
+# 2. Enable IP forwarding, persistently
+echo "net.ipv4.ip_forward = 1" > /etc/sysctl.d/custom-nat.conf
+sysctl -p /etc/sysctl.d/custom-nat.conf
 
-# 4. Save the iptables rules and enable the service on boot
-sudo service iptables save
-sudo systemctl enable iptables
+# 3. Detect the real interface (ens5 on Nitro, not eth0)
+IFACE=$(ip route show default | awk '/default/ {print $5; exit}')
+echo "Configuring NAT on interface: $IFACE"
 
-# 5. Verify the iptables rules were applied successfully
-sudo iptables -t nat -L -n -v
+# 4. Clear the ruleset the package just wrote to disk
+iptables -F
+iptables -t nat -F
+iptables -P FORWARD ACCEPT
+
+# 5. NAT + explicit forwarding
+iptables -t nat -A POSTROUTING -o "$IFACE" -j MASQUERADE
+iptables -A FORWARD -i "$IFACE" -o "$IFACE" -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i "$IFACE" -o "$IFACE" -j ACCEPT
+
+# 6. Persist, then enable
+iptables-save > /etc/sysconfig/iptables
+systemctl enable --now iptables
+
+# 7. Verify BOTH tables
+iptables -S
+iptables -t nat -S
 ```
 
 ---
